@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="ccc.css">
+    <script src="ccc.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+            $( function() {
+              $( "#datepicker" ).datepicker();
+            } );
+            </script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    <!-- <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#" id="maryj">Marijuana</a>
+          <a href="#" id="coke">Cocaine</a>
+          <a href="#" id="booze">Alcohol</a>
+        </div>
+      </div> -->
+      <div class="select-style">
+      <select name="drugs" size="5" id="drugTaken">
+          <option value="marijuana">Marijuana</option>
+          <option value="cocaine">Cocaine</option>
+          <option value="alcohol">Alcohol</option>
+      </select>
+      </div>
+      <p id="datetaken">Date Taken: <input type="text" id="datepicker"></p>
+      
+      <br />
+      <button onclick="calcDrug()" class="submit">When will I be clean?</button>
+        <br />
+        <p id="generated"></p>
+    </div>
+</body>
+</html>
+
+
+
+
