@@ -4,7 +4,7 @@ export const LogoContainer = styled.div`
   height: 100px;
   width: 80%;
   padding: 0px;
-  background-color: white;
+  background-color: #1c1c1c;
   margin: 0px auto;
 `;
 

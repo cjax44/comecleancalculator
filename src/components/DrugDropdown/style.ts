@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { DrugSelector } from "./DrugSelector";
 
 export const DropDownSectionBG = styled.div`
   text-align: center;
@@ -9,6 +10,7 @@ export const DropDownSectionBG = styled.div`
 `;
 
 export const HeaderContainer = styled.h2`
+  font-size: 1.75rem;
   opacity: 120%;
   max-width: 70%;
   margin: 0px auto;
