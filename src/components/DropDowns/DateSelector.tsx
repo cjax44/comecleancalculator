@@ -1,5 +1,6 @@
 import React from "react";
-import Select from "react-select";
+import Dropdown from "react-dropdown";
+import "react-dropdown/style.css";
 
 const options = [
   { value: "chocolate", label: "Chocolate" },
@@ -7,9 +8,9 @@ const options = [
   { value: "vanilla", label: "Vanilla" }
 ];
 
-export class DrugSelector extends React.Component {
+export class DateSelector extends React.Component {
   state = {
-    selectedOption: null
+    selectedOption: options[0]
   };
   handleChange = (selectedOption: any) => {
     this.setState({ selectedOption }, () =>
@@ -20,7 +21,7 @@ export class DrugSelector extends React.Component {
     const { selectedOption } = this.state;
 
     return (
-      <Select
+      <Dropdown
         value={selectedOption}
         onChange={this.handleChange}
         options={options}

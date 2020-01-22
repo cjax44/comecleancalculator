@@ -7,7 +7,6 @@ export const Header = () => {
       <LogoContainer>
         <img src="https://imgur.com/0lV6hiW.png" />
       </LogoContainer>
-      ;
     </TopBar>
   );
 };

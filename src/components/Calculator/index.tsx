@@ -1,11 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { CalcWrapper } from "./style";
-import { DrugDropdown } from "../DrugDropdown";
+import { DrugDropdown } from "../DropDowns";
 
 export const Calculator = () => {
-  const today = new Date();
-  const [dateTaken, setDateTaken] = useState(today);
-
   return (
     <CalcWrapper>
       <DrugDropdown />
